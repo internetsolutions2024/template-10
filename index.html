@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="favicon.ico">
+   <title>Example-10</title>
+</head>
+
+<body>
+   <style>
+      /*https://ld-wp73.template-help.com/wordpress/prod_11350/v2/*/
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+      body {
+         background-color: #ececec;
+      }
+
+      :root {
+         --mycolor1: #333333;
+         --mycolor2: #C9DD37;
+         --mycolor3: #398DA2;
+         --mycolor4: #6F6F6F;
+         --myfont1: "Montserrat", Sans-serif;
+         ;
+      }
+
+      .main {
+         box-sizing: border-box;
+         max-width: 900px;
+         margin: 0 auto;
+         background-color: #fff;
+         font-family: var(--myfont1);
+         color: var(--mycolor1);
+      }
+
+      a {
+         text-decoration: none;
+         cursor: pointer;
+      }
+
+      * h3,
+      h4 {
+         margin: 0 0 10px 0 !important;
+         font-size: 15px !important;
+         line-height: 1.4em !important;
+         font-weight: 700 !important;
+      }
+
+      * h2 {
+         font-size: 14px !important;
+         font-weight: 300 !important;
+         line-height: 17px !important;
+         letter-spacing: 1.12px !important;
+         margin: 15px 0 !important;
+         color: var(--mycolor2);
+      }
+
+      p {
+         font-size: 14px;
+         line-height: 18px;
+         margin: 10px 0 !important;
+         letter-spacing: 0.5px;
+      }
+
+      ul {
+         padding: 0 !important;
+         margin: 0 !important;
+      }
+
+      ul li {
+         list-style-type: none !important;
+         padding-left: 20px !important;
+         font-size: 14px !important;
+         line-height: 22px !important;
+         padding: 0 !important;
+         margin: 7px 0 !important;
+      }
+
+      ._container {
+         max-width: 900px;
+         margin: 0 auto;
+      }
+
+      .imgforloading {
+         display: flex;
+      }
+
+      .imgforloading img {
+         width: 0.01px !important;
+         height: 0.01px !important;
+      }
+
+      /*-----introduction-----*/
+
+      .introduction {
+         padding: 90px 40px 120px;
+         background: url(img-10/introduction.jpg);
+         background-size: cover;
+         background-position: center;
+      }
+
+      .introduction__container {}
+
+      ._container {}
+
+      .introduction__body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+
+      .introduction__content {
+         flex: 1 1 80%;
+      }
+
+      .introduction__sub-title {
+         font-size: 26px;
+         font-weight: 300;
+         line-height: 1.2em;
+         letter-spacing: 1.44px;
+         margin: 0 !important;
+      }
+
+      .introduction__title {
+         font-size: 45px;
+         font-weight: 700;
+         text-transform: uppercase;
+         line-height: 1.3em;
+         letter-spacing: 5px;
+         padding: 5px 15px 5px 30px;
+         background-color: #fff;
+         margin: 20px 0 !important;
+      }
+
+      .introduction__title span {
+         color: var(--mycolor2);
+      }
+
+      .introduction__button-area {
+         text-align: right;
+      }
+
+      .introduction__button {
+         transform: translateX(5px);
+      }
+
+      .in-button {
+         display: inline-block;
+         padding: 15px 25px;
+         font-size: 15px;
+         font-weight: 700;
+         background-color: var(--mycolor3);
+         color: #fff !important;
+         text-align: right;
+         transition: .2s;
+         text-transform: uppercase;
+      }
+
+      .in-button:hover {
+         background-color: var(--mycolor2);
+         transition: .2s;
+      }
+
+      .introduction__image {
+         flex: 1 1 20%;
+      }
+
+      @media screen and (max-width: 500px) {
+         .introduction {
+            padding: 80px 30px;
+         }
+
+         .introduction__title {
+            font-size: 30px;
+         }
+      }
+
+      /*--------offer---------*/
+
+      .offer {
+         padding: 30px 40px;
+      }
+
+      .offer__container {}
+
+      ._container {}
+
+      .offer__body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         align-items: center;
+      }
+
+      .offer__content {
+         flex: 1 1 40%;
+      }
+
+      .offer__title-area {}
+
+      .offer__title {}
+
+      .offer__sub-title {}
+
+      .offer__sub-s-title {}
+
+      .in-title-area {}
+
+      .in-title {
+         text-transform: uppercase;
+      }
+
+      .in-sub-title {
+         font-size: 26px;
+         font-weight: 600;
+         line-height: 1.2em;
+      }
+
+      .in-sub-s-title {
+         font-size: 14px;
+         font-weight: 400;
+      }
+
+      .offer__text {
+         font-size: 13px;
+         color: var(--mycolor4);
+      }
+
+      .offer__items {
+         display: flex;
+      }
+
+      .offer__item {
+         margin-right: 15px;
+      }
+
+      .offer__number {
+         font-size: 40px;
+         line-height: 1.2em;
+         font-weight: 700;
+         color: var(--mycolor3);
+      }
+
+      .offer__description {
+         color: var(--mycolor4) !important;
+         font-size: 13px;
+      }
+
+      .offer__images {
+         flex: 1 1 40%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+         margin: 0px -10px 0px 30px;
+      }
+
+      .offer__images-left {
+         flex: 1 1 40%;
+         display: flex;
+         flex-direction: column;
+         align-items: end;
+         text-align: right;
+      }
+
+      .offer__image {
+         margin: 10px;
+      }
+
+      .offer__image img {
+         width: 100%;
+         display: flex;
+      }
+
+      .offer__image_1 {}
+
+      .offer__image_2 {
+         width: 60%;
+      }
+
+      .offer__images-right {
+         flex: 1 1 40%;
+      }
+
+      .offer__image_3 {}
+
+      @media screen and (max-width: 500px) {
+         .offer {
+            padding: 30px;
+         }
+
+         .offer__images {
+            flex: 1 1 100%;
+            margin: 0 -10px;
+         }
+      }
+
+      /*------services-------*/
+      .services {
+         padding: 30px 40px;
+         background: url(img-10/services.jpg);
+         background-size: cover;
+         background-position: center;
+      }
+
+      .services__container {}
+
+      ._container {}
+
+      .services__body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin: 0 -10px;
+      }
+
+      .services__title-area {
+         text-align: center;
+         max-width: 60%;
+         margin: 0 auto;
+      }
+
+      .in-title-area {}
+
+      .services__title {}
+
+      .services__sub-title {
+         color: #fff;
+      }
+
+      .services__sub-s-title {
+         color: #fff;
+         font-size: 14px;
+      }
+
+
+      .services__item {
+         color: #fff;
+         flex: 1 1 40%;
+         margin: 10px;
+         padding: 25px 20px 20px;
+         text-align: center;
+         border: 2px solid #fff;
+         transition: .3s;
+      }
+
+      .services__item:hover {
+         border: 2px solid var(--mycolor3);
+         background-color: var(--mycolor3);
+         transition: .3s;
+      }
+
+      .services__icon {
+         width: 30px;
+         height: 30px;
+         margin: 0 auto 15px;
+         transition: .3s;
+      }
+
+      .services__topic {}
+
+      .services__text {
+         font-weight: 300;
+         line-height: 1.72em;
+      }
+
+      .services__icon_1 {
+         background: url(img-10/services1.png);
+         background-size: cover;
+
+      }
+
+      .services__icon_2 {
+         background: url(img-10/services2.png);
+         background-size: cover;
+      }
+
+      .services__icon_3 {
+         background: url(img-10/services3.png);
+         background-size: cover;
+      }
+
+      .services__icon_4 {
+         background: url(img-10/services4.png);
+         background-size: cover;
+      }
+
+      .services__item:hover .services__icon_1 {
+         background: url(img-10/services1-2.png);
+         background-size: cover;
+         transition: .3s;
+      }
+
+      .services__item:hover .services__icon_2 {
+         background: url(img-10/services2-2.png);
+         background-size: cover;
+         transition: .3s;
+      }
+
+      .services__item:hover .services__icon_3 {
+         background: url(img-10/services3-2.png);
+         background-size: cover;
+         transition: .3s;
+      }
+
+      .services__item:hover .services__icon_4 {
+         background: url(img-10/services4-2.png);
+         background-size: cover;
+         transition: .3s;
+      }
+
+      @media screen and (max-width: 500px) {
+         .services__item {
+            flex: 1 1 100%;
+         }
+
+         .services {
+            padding: 30px;
+         }
+
+         .services__title-area {
+            max-width: 100%;
+         }
+      }
+
+      /*---------projects------*/
+
+      .projects {
+         padding: 30px 40px;
+      }
+
+      .projects__container {}
+
+      ._container {}
+
+      .projects__title-area {}
+
+      .in-title-area {}
+
+      .projects__title {}
+
+      .projects__sub-title {}
+
+      .projects__sub-s-title {}
+
+      .projects__body {
+         display: flex;
+         justify-content: space-between;
+         align-items: start;
+         flex-wrap: wrap;
+         margin: 0 -10px;
+      }
+
+      .projects__item {
+         flex: 1 1 25%;
+         margin: 10px;
+         position: relative;
+         overflow: hidden;
+         z-index: 0;
+      }
+
+      .projects__item img {
+         width: 100%;
+         height: 240px;
+         object-fit: cover;
+         display: flex;
+         box-sizing: border-box;
+      }
+
+      .projects__item_1 {}
+
+      .projects__hiden {
+         position: absolute;
+         background-color: rgba(0, 0, 0, 0.7);
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         color: #fff;
+         text-align: center;
+         padding: 20px;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         transition: .5s;
+
+      }
+
+      .projects__item:hover .projects__hiden {
+         top: 0;
+         left: 0;
+         transition: .5s;
+      }
+
+      .projects__hiden p {
+         font-weight: 300;
+         font-size: 13px;
+      }
+
+      .projects__button {
+         font-size: 12px !important;
+      }
+
+      .in-button {}
+
+      .projects__item_2 {}
+
+      .projects__item_2 img {
+         width: 100%;
+         height: 370px;
+      }
+
+      .projects__item_3 {}
+
+      .projects__item_4 {
+         margin-top: -120px;
+      }
+
+      .projects__item_5 {}
+
+      .projects__item_5 img {
+         width: 100%;
+         height: 370px;
+      }
+
+      .projects__item_6 {
+         margin-top: -120px;
+      }
+
+      .projects__item_7 {
+         flex: 0 1 31%;
+         margin-top: -250px;
+      }
+
+      .projects__item_8 {
+         flex: 0 1 31%;
+         margin-top: -250px;
+      }
+
+      @media screen and (max-width: 800px) {
+         .projects__item img {
+            height: 240px !important;
+
+         }
+
+         .projects__item {
+            margin: 10px !important;
+            flex: 1 1 30% !important;
+         }
+      }
+
+      @media screen and (max-width: 500px) {
+         .projects {
+            padding: 30px;
+         }
+
+         .projects__item {
+            flex: 1 1 100% !important;
+         }
+      }
+
+      /*---------vision---------*/
+
+      .vision {
+         padding: 30px 40px;
+         background-color: #232323;
+         overflow: hidden;
+      }
+
+      .vision__container {}
+
+      ._container {}
+
+      .vision__body {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+         margin: 0 -10px;
+      }
+
+      .vision__content {
+         color: #fff;
+         margin: 10px;
+         flex: 1 1 40%;
+      }
+
+      .vision__title-area {
+         color: #fff;
+      }
+
+      .vision__title {}
+
+      .vision__sub-title {}
+
+      .vision__sub-s-title {}
+
+      .vision__items {
+         flex: 1 1 40%;
+         margin: 10px 10px 10px 40px;
+         color: #fff;
+
+
+      }
+
+      .vision__item {}
+
+      .vision__item_1 {}
+
+      .vision__item_2 {}
+
+      .vision__item_3 {}
+
+      .vision__item_4 {}
+
+      .vision__item {
+         margin: 15px 0 20px;
+         padding-bottom: 1px;
+         position: relative;
+         z-index: 0;
+         border-bottom: 8px solid var(--mycolor1);
+      }
+
+      .vision__item_1::after,
+      .vision__item_2::after,
+      .vision__item_3::after,
+      .vision__item_4::after {
+         position: absolute;
+         content: '';
+         bottom: -8px;
+         left: 0;
+         width: 50%;
+         height: 8px;
+         background-color: var(--mycolor2);
+         transition: .6s;
+         z-index: -1;
+      }
+
+      .vision__item_2::after,
+      .vision__item_4::after {
+         background-color: var(--mycolor3);
+      }
+
+      .vision__item::before {
+         position: absolute;
+         content: '%';
+         bottom: 27px;
+         left: calc(50% - 20px);
+         width: 100%;
+         height: 3px;
+         font-size: 18px;
+         font-weight: 500 !important;
+         transition: .6s;
+      }
+
+      .vision:hover .vision__item::after {
+         width: 97%;
+         transition-duration: .6s;
+      }
+
+      .vision:hover .vision__item_2::after {
+         width: 98%;
+         transition-delay: .3s;
+      }
+
+      .vision:hover .vision__item_3::after {
+         width: 99%;
+         transition-delay: .6s;
+      }
+
+      .vision:hover .vision__item_4::after {
+         width: 100%;
+         transition-delay: .9s;
+      }
+
+
+      @keyframes procent {
+         0% {
+            content: '50%';
+         }
+
+         20% {
+            content: '60%';
+         }
+
+         40% {
+            content: '70%';
+         }
+
+         60% {
+            content: '80%';
+         }
+
+         80% {
+            content: '90%';
+         }
+
+         100% {
+            content: '97%';
+         }
+      }
+
+      @keyframes procent2 {
+         0% {
+            content: '50%';
+         }
+
+         20% {
+            content: '60%';
+         }
+
+         40% {
+            content: '70%';
+         }
+
+         60% {
+            content: '80%';
+         }
+
+         80% {
+            content: '90%';
+         }
+
+         100% {
+            content: '98%';
+         }
+      }
+
+      @keyframes procent3 {
+         0% {
+            content: '50%';
+         }
+
+         20% {
+            content: '60%';
+         }
+
+         40% {
+            content: '70%';
+         }
+
+         60% {
+            content: '80%';
+         }
+
+         80% {
+            content: '90%';
+         }
+
+         100% {
+            content: '99%';
+         }
+      }
+
+      @keyframes procent4 {
+         0% {
+            content: '50%';
+         }
+
+         20% {
+            content: '60%';
+         }
+
+         40% {
+            content: '70%';
+         }
+
+         60% {
+            content: '80%';
+         }
+
+         80% {
+            content: '90%';
+         }
+
+         100% {
+            content: '100%';
+         }
+      }
+
+      .vision:hover .vision__item::before {
+         left: calc(97% - 40px);
+         transition-duration: .7s;
+         animation: procent linear .6s alternate forwards;
+      }
+
+      .vision:hover .vision__item_2::before {
+         transition-delay: .3s;
+         left: calc(98% - 40px);
+         animation: procent2 linear .6s .3s alternate forwards;
+      }
+
+      .vision:hover .vision__item_3::before {
+         transition-delay: .6s;
+         left: calc(99% - 40px);
+         animation: procent3 linear .6s 0.6s alternate forwards;
+      }
+
+      .vision:hover .vision__item_4::before {
+         transition-delay: .9s;
+         left: calc(100% - 40px);
+         animation: procent4 linear .6s .9s alternate forwards;
+      }
+
+      @media screen and (max-width: 500px) {
+         .vision {
+            padding: 30px;
+         }
+
+         .vision__items {
+            margin: 10px;
+            flex: 1 1 100%;
+         }
+      }
+
+      /*------blog--------*/
+      .blog {
+         padding: 30px 40px;
+         text-align: center;
+      }
+
+      .blog__container {}
+
+      ._container {}
+
+      .blog__title-area {
+         max-width: 60%;
+         margin: 0 auto;
+      }
+
+      .in-title-area {}
+
+      .blog__title {}
+
+      .blog__sub-title {}
+
+      .blog__sub-s-title {}
+
+      .blog__body {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         margin: 0 -10px;
+      }
+
+      .blog__item {
+         flex: 1 1 25%;
+         margin: 10px;
+         text-align: left;
+      }
+
+      .blog__image {}
+
+      .blog__image img {
+         width: 100%;
+         display: flex;
+      }
+
+      .blog__content {
+         padding: 20px 10px;
+      }
+
+      .blog__link {
+         color: var(--mycolor1);
+         font-size: 14px !important;
+         font-weight: 600;
+         transition: .3s;
+      }
+
+      .blog__link:hover {
+         color: var(--mycolor3);
+         transition: .3s;
+      }
+
+      .blog__data {
+         color: var(--mycolor2);
+      }
+
+      .blog__text {}
+
+      .blog__button {}
+
+      .in-button {}
+
+      @media screen and (max-width: 500px) {
+
+         .blog {
+            padding: 30px;
+         }
+
+         .blog__title-area {
+            max-width: 100%;
+         }
+
+         .blog__item {
+            flex: 1 1 100%;
+         }
+      }
+
+      /*-------trademark---------*/
+
+      .trademark {
+         padding: 30px 40px;
+      }
+
+      .trademark__container {}
+
+      ._container {}
+
+      .trademark__title-area {
+         text-align: center;
+         max-width: 60%;
+         margin: 0 auto 10px;
+      }
+
+      .trademark__title {}
+
+      .trademark__sub-title {}
+
+      .trademark__sub-s-title {}
+
+      .in-sub-s-title {}
+
+      .trademark__body {
+         margin: 0 -20px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .trademark__wrapp {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         transition: .3s;
+         animation: marks 10s linear infinite;
+      }
+
+      .trademark__wrapp_2 {
+         position: absolute;
+         top: 0;
+         left: 0;
+         transform: translateX(-100%);
+         animation: marks-2 10s linear infinite;
+      }
+
+      @keyframes marks {
+         0% {
+            transform: translateX(0%);
+         }
+
+         5% {
+            transform: translateX(0%);
+         }
+
+         10% {
+            transform: translateX(0%);
+         }
+
+         15% {
+            transform: translateX(20%);
+         }
+
+         20% {
+            transform: translateX(20%);
+         }
+
+         25% {
+            transform: translateX(20%);
+         }
+
+         30% {
+            transform: translateX(20%);
+         }
+
+         35% {
+            transform: translateX(40%);
+         }
+
+         40% {
+            transform: translateX(40%);
+         }
+
+         45% {
+            transform: translateX(40%);
+         }
+
+         50% {
+            transform: translateX(40%);
+         }
+
+         55% {
+            transform: translateX(60%);
+         }
+
+         60% {
+            transform: translateX(60%);
+         }
+
+         65% {
+            transform: translateX(60%);
+         }
+
+         70% {
+            transform: translateX(60%);
+         }
+
+         75% {
+            transform: translateX(80%);
+         }
+
+         80% {
+            transform: translateX(80%);
+         }
+
+         85% {
+            transform: translateX(80%);
+         }
+
+         90% {
+            transform: translateX(80%);
+         }
+
+         95% {
+            transform: translateX(100%);
+         }
+
+         100% {
+            transform: translateX(100%);
+         }
+      }
+
+      @keyframes marks-2 {
+         0% {
+            transform: translateX(-100%);
+         }
+
+         5% {
+            transform: translateX(-100%);
+         }
+
+         10% {
+            transform: translateX(-100%);
+         }
+
+         15% {
+            transform: translateX(-80%);
+         }
+
+         20% {
+            transform: translateX(-80%);
+         }
+
+         25% {
+            transform: translateX(-80%);
+         }
+
+         30% {
+            transform: translateX(-80%);
+         }
+
+         35% {
+            transform: translateX(-60%);
+         }
+
+         40% {
+            transform: translateX(-60%);
+         }
+
+         45% {
+            transform: translateX(-60%);
+         }
+
+         50% {
+            transform: translateX(-60%);
+         }
+
+         55% {
+            transform: translateX(-40%);
+         }
+
+         60% {
+            transform: translateX(-40%);
+         }
+
+         65% {
+            transform: translateX(-40%);
+         }
+
+         70% {
+            transform: translateX(-40%);
+         }
+
+         75% {
+            transform: translateX(-20%);
+         }
+
+         80% {
+            transform: translateX(-20%);
+         }
+
+         85% {
+            transform: translateX(-20%);
+         }
+
+         90% {
+            transform: translateX(-20%);
+         }
+
+         95% {
+            transform: translateX(0%);
+         }
+
+         100% {
+            transform: translateX(0%);
+         }
+      }
+
+      .trademark__item {
+         margin: 10px 20px;
+         flex: 1 1 15%;
+      }
+
+      .trademark__item img {
+         width: 100%;
+      }
+
+      @media screen and (max-width: 870px) {
+         .trademark__item {
+            flex: 1 1 20%;
+         }
+
+         .trademark__wrapp {
+            animation: none;
+         }
+      }
+
+      @media screen and (max-width: 500px) {
+         .trademark {
+            padding: 30px;
+         }
+
+         .trademark__title-area {
+            max-width: 100%;
+         }
+
+
+
+      }
+
+      /*-----reviews-----*/
+
+      .reviews {
+         padding: 30px 40px;
+         background-color: #f9f9f9
+      }
+
+      .reviews__container {}
+
+      ._container {}
+
+      .reviews__title-area {
+         max-width: 60%;
+         margin: 0 auto;
+         text-align: center;
+      }
+
+      .in-title-area {}
+
+      .reviews__title {}
+
+      .reviews__sub-title {}
+
+      .reviews__sub-s-title {}
+
+      .reviews__body {
+         overflow: hidden;
+         position: relative;
+         margin: 0 -10px;
+      }
+
+      .reviews__wrapp {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         animation: reviews 8s linear infinite;
+      }
+
+      .reviews__item {
+         flex: 1 1 40%;
+         margin: 10px;
+      }
+
+      .reviews__top {
+         padding: 20px;
+         background-color: #fff;
+         position: relative;
+      }
+
+      .reviews__top::after {
+         position: absolute;
+         content: '';
+         width: 0;
+         height: 0;
+         bottom: -13px;
+         left: 26px;
+         border-left: 15px solid transparent;
+         border-right: 15px solid transparent;
+         border-top: 15px solid #ffffff;
+         z-index: 1;
+      }
+
+      .reviews__icon {}
+
+      .reviews__icon img {
+         width: 32px;
+         height: 32px;
+      }
+
+      .reviews__bottom {
+         display: flex;
+         padding: 10px 20px;
+         margin: 10px -10px;
+      }
+
+      .reviews__image {}
+
+      .reviews__image img {
+         border-radius: 50%;
+         width: 64px;
+         height: 64px;
+         margin-right: 10px;
+      }
+
+      .reviews__text {}
+
+      .reviews__name {}
+
+      .reviews__position {
+         color: var(--mycolor3);
+      }
+
+      .reviews__wrapp_2 {
+         position: absolute;
+         top: 0;
+         left: 0;
+         transform: translateX(100%);
+         animation: reviews-2 8s linear infinite;
+      }
+
+      @keyframes reviews {
+         0% {
+            transform: translateX(0%);
+         }
+
+         5% {
+            transform: translateX(0%);
+         }
+
+         10% {
+            transform: translateX(0%);
+         }
+
+         15% {
+            transform: translateX(0%);
+         }
+
+         20% {
+            transform: translateX(0%);
+         }
+
+         25% {
+            transform: translateX(0%);
+         }
+
+         30% {
+            transform: translateX(0%);
+         }
+
+         35% {
+            transform: translateX(-50%);
+         }
+
+         40% {
+            transform: translateX(-50%);
+         }
+
+         45% {
+            transform: translateX(-50%);
+         }
+
+         50% {
+            transform: translateX(-50%);
+         }
+
+         55% {
+            transform: translateX(-50%);
+         }
+
+         60% {
+            transform: translateX(-50%);
+         }
+
+         65% {
+            transform: translateX(-50%);
+         }
+
+         70% {
+            transform: translateX(-50%);
+         }
+
+         75% {
+            transform: translateX(-100%);
+         }
+
+         80% {
+            transform: translateX(-100%);
+         }
+
+         85% {
+            transform: translateX(-100%);
+         }
+
+         90% {
+            transform: translateX(-100%);
+         }
+
+         95% {
+            transform: translateX(-100%);
+         }
+
+         100% {
+            transform: translateX(-100%);
+         }
+      }
+
+      @keyframes reviews-2 {
+         0% {
+            transform: translateX(100%);
+         }
+
+         5% {
+            transform: translateX(100%);
+         }
+
+         10% {
+            transform: translateX(100%);
+         }
+
+         15% {
+            transform: translateX(100%);
+         }
+
+         20% {
+            transform: translateX(100%);
+         }
+
+         25% {
+            transform: translateX(100%);
+         }
+
+         30% {
+            transform: translateX(100%);
+         }
+
+         35% {
+            transform: translateX(50%);
+         }
+
+         40% {
+            transform: translateX(50%);
+         }
+
+         45% {
+            transform: translateX(50%);
+         }
+
+         50% {
+            transform: translateX(50%);
+         }
+
+         55% {
+            transform: translateX(50%);
+         }
+
+         60% {
+            transform: translateX(50%);
+         }
+
+         65% {
+            transform: translateX(50%);
+         }
+
+         70% {
+            transform: translateX(50%);
+         }
+
+         75% {
+            transform: translateX(0%);
+         }
+
+         80% {
+            transform: translateX(0%);
+         }
+
+         85% {
+            transform: translateX(0%);
+         }
+
+         90% {
+            transform: translateX(0%);
+         }
+
+         95% {
+            transform: translateX(0%);
+         }
+
+         100% {
+            transform: translateX(0%);
+         }
+      }
+
+      @media screen and (max-width: 870px) {
+         .reviews__wrapp {
+            animation: none;
+         }
+      }
+
+      @media screen and (max-width: 500px) {
+         .reviews {
+            padding: 30px;
+         }
+
+         .reviews__title-area {
+            max-width: 100%;
+         }
+      }
+
+      /*-------delivery------*/
+
+      .delivery {
+         padding: 30px 40px;
+      }
+
+      .delivery__container {}
+
+      ._container {}
+
+      .delivery__title-area {
+         text-align: center;
+      }
+
+      .delivery__title {}
+
+      .delivery__sub-title {}
+
+      .delivery__sub-s-title {}
+
+      .delivery__body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin: 0 -10px;
+      }
+
+      .delivery__item {
+         display: flex;
+         align-items: center;
+         flex: 1 1 25%;
+         margin: 10px;
+      }
+
+      .delivery__icon {
+         width: 64px;
+         height: 64px;
+         border-radius: 50%;
+         box-sizing: border-box;
+         margin-right: 15px;
+         display: flex;
+         padding: 20px;
+         transition: .3s;
+      }
+
+      .delivery__content {
+         flex: 1 1 30%;
+      }
+
+      .delivery__content h4 {
+         margin: 0 !important;
+      }
+
+      .delivery__content p {
+         margin: 5px 0 0 !important;
+      }
+
+      .delivery__icon_1 {
+         background: var(--mycolor3) url(img-10/delivery1.png) no-repeat;
+         background-size: 30px;
+         background-position: 16px 16px;
+         transition: .3;
+      }
+
+      .delivery__icon_2 {
+         background: var(--mycolor3) url(img-10/delivery2.png) no-repeat;
+         background-size: 30px;
+         background-position: 16px 16px;
+         transition: .3;
+      }
+
+      .delivery__icon_3 {
+         background: var(--mycolor3) url(img-10/delivery3.png) no-repeat;
+         background-size: 30px;
+         background-position: 16px 16px;
+         transition: .3;
+      }
+
+      .delivery__item:hover .delivery__icon_1 {
+         background: var(--mycolor3) url(img-10/delivery1-2.png) no-repeat;
+         background-size: 30px;
+         background-position: 16px 16px;
+         transition: .3;
+      }
+
+      .delivery__item:hover .delivery__icon_2 {
+         background: var(--mycolor3) url(img-10/delivery2-2.png) no-repeat;
+         background-size: 30px;
+         background-position: 16px 16px;
+         transition: .3;
+      }
+
+      .delivery__item:hover .delivery__icon_3 {
+         background: var(--mycolor3) url(img-10/delivery3-2.png) no-repeat;
+         background-size: 30px;
+         background-position: 16px 16px;
+         transition: .3;
+      }
+
+      /*-------faq--------*/
+
+      .faq {
+         padding: 30px 40px;
+         text-align: center;
+         position: relative;
+         z-index: 0;
+      }
+
+      .faq__title {
+         color: #fff !important;
+      }
+
+      .faq-body {
+         margin: 20px -10px 0;
+      }
+
+
+      .faq-body-content {
+         text-align: left;
+      }
+
+      summary::-webkit-details-marker {
+         display: none;
+      }
+
+      summary::-moz-list-bullet {
+         list-style-type: none;
+      }
+
+      summary::marker {
+         display: none;
+      }
+
+      summary {
+         padding: 10px 35px 10px 25px;
+         display: block;
+         font-size: 16px;
+         font-weight: 500;
+         cursor: pointer;
+         position: relative;
+         transition: .3s;
+         color: var(--mycolor3);
+      }
+
+      summary:before {
+         top: 8px;
+         right: 5px;
+         color: transparent;
+         width: 20px;
+         height: 20px;
+         font-size: 20px;
+         font-weight: 700;
+         content: "+";
+         position: absolute;
+         color: var(--mycolor4);
+         transition: .5s;
+      }
+
+      summary:hover::before {}
+
+      details[open]>summary:before {
+         transition: .5s;
+         content: "–";
+         color: var(--mycolor3);
+      }
+
+      summary~* {
+         padding: 0px 25px 10px;
+      }
+
+      details[open] summary~* {
+         animation: sweep .5s ease-in-out;
+
+      }
+
+      details[open] summary {
+         transition: .3s;
+      }
+
+      @keyframes sweep {
+         0% {
+            opacity: 0;
+         }
+
+         100% {
+            opacity: 1;
+         }
+      }
+
+      summary:focus {
+         outline: 0;
+
+      }
+
+      details {
+         display: block;
+         margin: 10px;
+         color: var(--mycolor1);
+         border: 2px solid #f3f3f3;
+
+      }
+
+      details p {
+         margin: 0 !important;
+      }
+
+      @media screen and (max-width: 500px) {
+         .faq {
+            padding: 30px;
+         }
+      }
+   </style>
+   <div class="main">
+      <section class="introduction">
+         <div class="introduction__container _container">
+            <div class="introduction__body">
+               <div class="introduction__content">
+                  <p class="introduction__sub-title">Interior Design</p>
+                  <div class="introduction__title">
+                     <span>Classy</span> Renovation
+                  </div>
+                  <div class="introduction__button-area">
+                     <a href="" class="introduction__button in-button">PURCHASE NOW</a>
+                  </div>
+               </div>
+               <div class="introduction__image"></div>
+            </div>
+         </div>
+      </section>
+      <section class="offer">
+         <div class="offer__container _container">
+            <div class="offer__body">
+               <div class="offer__content">
+                  <div class="offer__title-area in-title-area">
+                     <h2 class="offer__title in-title">Що ми пропонуємо</h2>
+                     <p class="offer__sub-title in-sub-title">Full Package
+                        of Design Services</p>
+                     <p class="offer__sub-s-title in-sub-s-title">From Design-Project to Accessories Selection</p>
+                  </div>
+                  <p class="offer__text">Interior Agency provides its clients with the most full list of design
+                     services, starting from
+                     creating a design-project and its 3D visualization to selecting exclusive accessories right for
+                     your interior. Our award-winning designers offer the most exquisite decisions and create really
+                     unique spaces either in apartments or offices.</p>
+                  <div class="offer__items">
+                     <div class="offer__item">
+                        <p class="offer__number">
+                           20
+                           +</p>
+                        <p class="offer__description">tons of paint used</p>
+                     </div>
+                     <div class="offer__item">
+                        <p class="offer__number">
+                           67
+                           +</p>
+                        <p class="offer__description">rooms done monthly
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="offer__images">
+                  <div class="offer__images-left">
+                     <div class="offer__image offer__image_1"><img src="img-10/offer1.jpg" alt=""></div>
+                     <div class="offer__image offer__image_2"><img src="img-10/offer2.jpg" alt=""></div>
+                  </div>
+                  <div class="offer__images-right">
+                     <div class="offer__image offer__image_3"><img src="img-10/offer3.jpg" alt=""></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="services">
+         <div class="services__container _container">
+            <div class="services__body">
+               <div class="services__title-area in-title-area">
+                  <h2 class="services__title in-title">Знайомство</h2>
+                  <p class="services__sub-title in-sub-title">Our Services</p>
+                  <p class="services__sub-s-title in-sub-s-title">With a team of highly skilled and accredited interior
+                     designers, we are equipped to undertake projects of any size</p>
+               </div>
+               <div class="services__item">
+                  <div class="services__icon services__icon_1">
+                  </div>
+                  <h4 class="services__topic">Design Consultation
+                  </h4>
+                  <p class="services__text">This service is perfect for multiple rooms or rooms that require more than
+                     just a refresh. We can visit your home to create a complete design scheme.</p>
+               </div>
+               <div class="services__item">
+                  <div class="services__icon services__icon_2">
+                  </div>
+                  <h4 class="services__topic">Design-Project & 3D Visualization
+                  </h4>
+                  <p class="services__text">Client specific shopping, sourcing and installation of finishing touches and
+                     accessories such as lamps, area rugs and art work that finish off your unique design.</p>
+               </div>
+               <div class="services__item">
+                  <div class="services__icon services__icon_3">
+                  </div>
+                  <h4 class="services__topic">Custom Furniture
+                  </h4>
+                  <p class="services__text">Our agency will help you create your distinctive style by selecting custom
+                     furniture pieces from our expansive library of furniture lines.</p>
+               </div>
+               <div class="services__item">
+                  <div class="services__icon services__icon_4">
+                  </div>
+                  <h4 class="services__topic">Exclusive Accessories
+                  </h4>
+                  <p class="services__text">Client specific shopping, sourcing and installation of finishing touches and
+                     accessories such as lamps, area rugs and art work that finish off your unique design.</p>
+               </div>
+
+            </div>
+         </div>
+      </section>
+      <section class="projects">
+         <div class="projects__container _container">
+            <div class="projects__title-area in-title-area">
+               <h2 class="projects__title in-title">Наші послуги</h2>
+               <p class="projects__sub-title in-sub-title">Recent Works</p>
+               <p class="projects__sub-s-title in-sub-s-title">Check our recent works we have just finished in
+                  different locations for different purposes and clients.</p>
+            </div>
+            <div class="projects__body">
+
+               <div class="projects__item projects__item_1">
+                  <img src="img-10/project1.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>HARDY AMIESL</h4>
+                     <p>Interior Design Studio developed a new flagship store for Hardy Amies on Savile Row. The…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+               <div class="projects__item projects__item_2">
+                  <img src="img-10/project2.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>STRANGE BEAUTY AT THE NATIONAL GALLERY</h4>
+                     <p>Interior Design Studio was selected by the National Gallery to design the Strange Beauty
+                        Exhibition.…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+               <div class="projects__item projects__item_3">
+                  <img src="img-10/project3.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>AT SIX HOTEL</h4>
+                     <p>Interior Design Studio has completed At Six, a 343 room hotel in Chicago’s Square housing…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+               <div class="projects__item projects__item_4">
+                  <img src="img-10/project4.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>J&M DAVIDSON</h4>
+                     <p>The US luxury leather goods and ready-to-wear label J&M Davidson commissioned Interior Design
+                        Studio to…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+               <div class="projects__item projects__item_5">
+                  <img src="img-10/project5.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>PEACH BLOSSOM SHOWROOM</h4>
+                     <p>Interior Design Studio developed the Peach Blossom showroom, which occupies two floors of an
+                        ex-industrial Grade…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+               <div class="projects__item projects__item_6">
+                  <img src="img-10/project6.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>THE KITCHEN, DEN STUART RESIDENCE</h4>
+                     <p>The space is subtly divided into five zones that have differing moods and dining formats.…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+               <div class="projects__item projects__item_7">
+                  <img src="img-10/project7.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>ACE HOTEL</h4>
+                     <p>Interior Design Studio was approached by Ace to design their first hotel outside of Canada.…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+               <div class="projects__item projects__item_8">
+                  <img src="img-10/project8.jpg" alt="">
+                  <div class="projects__hiden">
+                     <h4>ACE HOTEL, GLASGOW</h4>
+                     <p>This floor focuses on the roof scape and offers a change in viewpoint and pace…</p>
+                     <a class="projects__button in-button" href="">
+                        view details
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="vision">
+         <div class="vision__container _container">
+            <div class="vision__body">
+               <div class="vision__content">
+                  <div class="vision__title-area in-title-area">
+                     <h2 class="vision__title in-title">Наші досягнення</h2>
+                     <p class="vision__sub-title in-sub-title">We value quality,
+                        terms and creativity</p>
+                     <p class="vision__sub-s-title in-sub-s-title">Customer is always right!</p>
+                  </div>
+                  <p>We discuss every detail with our clients to deliver them exactly what they want. At the same time
+                     we offer and perform creative and elegant ideas for the most beautiful interior performing. Our
+                     responsibility is to create your dream interior, so you could feel yourself comfortable and calm in
+                     a new space.</p>
+               </div>
+               <div class="vision__items">
+                  <div class="vision__item vision__item_1">
+                     <p>RESIDENTIAL</p>
+                  </div>
+                  <div class="vision__item vision__item_2">
+                     <p>COMMERCIAL</p>
+                  </div>
+                  <div class="vision__item vision__item_3">
+                     <p>WORK SPACE</p>
+                  </div>
+                  <div class="vision__item vision__item_4">
+                     <p>RESTAURANTS</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="trademark">
+         <div class="trademark__container _container">
+            <div class="trademark__title-area in-title-area">
+               <h2 class="trademark__title in-title">Наші партнери</h2>
+               <p class="trademark__sub-title in-sub-title">Сatalog Trademarks</p>
+               <p class="trademark__sub-s-title in-sub-s-title">Check our recent works we have just finished in
+                  different locations for different purposes and clients.</p>
+            </div>
+            <div class="trademark__body">
+               <div class="trademark__wrapp trademark__wrapp_2">
+                  <div class="trademark__item">
+                     <img src="img-10/trademark1.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark2.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark3.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark4.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark5.png" alt="">
+                  </div>
+               </div>
+               <div class="trademark__wrapp">
+                  <div class="trademark__item">
+                     <img src="img-10/trademark1.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark2.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark3.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark4.png" alt="">
+                  </div>
+                  <div class="trademark__item">
+                     <img src="img-10/trademark5.png" alt="">
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </section>
+      <section class="blog">
+         <div class="blog__container _container">
+            <div class="blog__title-area in-title-area">
+               <h2 class="blog__title in-title">блог</h2>
+               <p class="blog__sub-title in-sub-title">Recent Works</p>
+               <p class="blog__sub-s-title in-sub-s-title">We regularly share the latest news and events in our blog.
+                  Check our latest thoughts right now!</p>
+
+            </div>
+            <div class="blog__body">
+               <div class="blog__item">
+                  <div class="blog__image">
+                     <img src="img-10/blog1.jpg" alt="">
+                  </div>
+                  <div class="blog__content">
+                     <a href="" class="blog__link">Tips How To Add A Color To A Monochromatic Interior
+                     </a>
+                     <p class="blog__data">April 27, 2023</p>
+                     <p class="blog__text">Monochromatic color is rooted in color theory and takes more than just
+                        picking a
+                        color and designing everything with it.…</p>
+                  </div>
+               </div>
+               <div class="blog__item">
+                  <div class="blog__image">
+                     <img src="img-10/blog2.jpg" alt="">
+                  </div>
+                  <div class="blog__content">
+                     <a href="" class="blog__link">Apartment Solutions Guide: Style + Storage
+                     </a>
+                     <p class="blog__data">April 12, 2023</p>
+                     <p class="blog__text">The limited amount of space and storage can cause all kinds of decorating
+                        dilemmas in rented apartments. When you need…</p>
+                  </div>
+               </div>
+               <div class="blog__item">
+                  <div class="blog__image">
+                     <img src="img-10/blog3.jpg" alt="">
+                  </div>
+                  <div class="blog__content">
+                     <a href="" class="blog__link">Exercitation ullamco laboris
+                     </a>
+                     <p class="blog__data">May 27, 2024</p>
+                     <p class="blog__text">From art market mainstays to persistent provocateu. It was a tall order and a
+                        picky search for us, when we tasked…</p>
+                  </div>
+               </div>
+            </div>
+            <a href="" class="blog__button in-button">view more</a>
+         </div>
+      </section>
+      <section class="reviews">
+         <div class="reviews__container _container">
+            <div class="reviews__title-area in-title-area">
+               <h2 class="reviews__title in-title">Відгуки</h2>
+               <p class="reviews__sub-title in-sub-title">What People Think About Us</p>
+               <p class="reviews__sub-s-title in-sub-s-title">Check our recent works we have just finished in
+                  different locations for different purposes and clients.</p>
+            </div>
+         </div>
+         <div class="reviews__body">
+            <div class="reviews__wrapp">
+               <div class="reviews__item">
+                  <div class="reviews__top">
+                     <div class="reviews__icon"><img src="img-10/reviews.png" alt=""></div>
+                     <p>I was recommended to use Interior by my co-worker. I needed an emergency help because of
+                        insects, and they helped me to resolve this problem so quick! I’ll definitely get back again as
+                        they have so many useful services!</p>
+                  </div>
+                  <div class="reviews__bottom">
+                     <div class="reviews__image"><img src="img-10/reviews1.jpg" alt=""></div>
+                     <div class="reviews__text">
+                        <p class="reviews__name">David Jones
+                        </p>
+                        <p class="reviews__position">manager
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="reviews__item">
+                  <div class="reviews__top">
+                     <div class="reviews__icon"><img src="img-10/reviews.png" alt=""></div>
+                     <p>I was recommended to use Interior by my co-worker. I needed an emergency help because of
+                        insects, and they helped me to resolve this problem so quick! I’ll definitely get back again as
+                        they have so many useful services!</p>
+                  </div>
+                  <div class="reviews__bottom">
+                     <div class="reviews__image"><img src="img-10/reviews2.jpg" alt=""></div>
+                     <div class="reviews__text">
+                        <p class="reviews__name">Jones Brook
+                        </p>
+                        <p class="reviews__position">customer
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <div class="reviews__wrapp reviews__wrapp_2">
+               <div class="reviews__item">
+                  <div class="reviews__top">
+                     <div class="reviews__icon"><img src="img-10/reviews.png" alt=""></div>
+                     <p>I was recommended to use Interior by my co-worker. I needed an emergency help because of
+                        insects, and they helped me to resolve this problem so quick! I’ll definitely get back again as
+                        they have so many useful services!</p>
+                  </div>
+                  <div class="reviews__bottom">
+                     <div class="reviews__image"><img src="img-10/reviews1.jpg" alt=""></div>
+                     <div class="reviews__text">
+                        <p class="reviews__name">David Jones
+                        </p>
+                        <p class="reviews__position">manager
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="reviews__item">
+                  <div class="reviews__top">
+                     <div class="reviews__icon"><img src="img-10/reviews.png" alt=""></div>
+                     <p>I was recommended to use Interior by my co-worker. I needed an emergency help because of
+                        insects, and they helped me to resolve this problem so quick! I’ll definitely get back again as
+                        they have so many useful services!</p>
+                  </div>
+                  <div class="reviews__bottom">
+                     <div class="reviews__image"><img src="img-10/reviews2.jpg" alt=""></div>
+                     <div class="reviews__text">
+                        <p class="reviews__name">Jones Brook
+                        </p>
+                        <p class="reviews__position">customer
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="delivery">
+         <div class="delivery__container _container">
+            <div class="delivery__container _container">
+               <div class="delivery__title-area in-title-area">
+                  <h2 class="delivery__title in-title">Як зробити замовлення</h2>
+                  <p class="delivery__sub-title in-sub-title">How To Order A Product</p>
+                  <p class="delivery__sub-s-title in-sub-s-title">Check our recent works we have just finished in
+                     different locations for different purposes and clients.</p>
+               </div>
+            </div>
+            <div class="delivery__body">
+               <div class="delivery__item">
+                  <div class="delivery__icon delivery__icon_1"></div>
+                  <div class="delivery__content">
+                     <h4>Call</h4>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+               </div>
+               <div class="delivery__item">
+                  <div class="delivery__icon delivery__icon_2"></div>
+                  <div class="delivery__content">
+                     <h4>Pay</h4>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+               </div>
+               <div class="delivery__item">
+                  <div class="delivery__icon delivery__icon_3"></div>
+                  <div class="delivery__content">
+                     <h4>Delivery</h4>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+               </div>
+            </div>
+      </section>
+      <section class="faq">
+         <div class="faq__container _container">
+            <div class="delivery__title-area in-title-area">
+               <h2 class="delivery__title in-title">FAQ</h2>
+               <p class="delivery__sub-title in-sub-title">Frequently Asked Questions By Buyers</p>
+               <p class="delivery__sub-s-title in-sub-s-title">Check our recent works we have just finished in
+                  different locations for different purposes and clients.</p>
+            </div>
+            <div class="faq-body">
+               <div itemscope itemtype="https://schema.org/FAQPage" class="faq-body-content">
+                  <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <summary itemprop="name">Non consectetur a erat nam at lectus urna duis?
+
+                     </summary>
+
+                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">
+                           Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                           curabitur
+                           gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+
+
+                        </p>
+                     </div>
+                  </details>
+                  <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <summary itemprop="name">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+
+                     </summary>
+
+                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">
+                           Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                           curabitur
+                           gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+
+
+                        </p>
+                     </div>
+                  </details>
+                  <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <summary itemprop="name">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+
+                     </summary>
+
+                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">
+                           Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                           curabitur
+                           gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+
+
+                        </p>
+                     </div>
+                  </details>
+                  <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                     <summary itemprop="name">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+
+                     </summary>
+
+                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">
+                           Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                           curabitur
+                           gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+
+
+                        </p>
+                     </div>
+                  </details>
+
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="imgforloading">
+         <img src="img-10/services1-2.png" alt="">
+         <img src="img-10/services2-2.png" alt="">
+         <img src="img-10/services3-2.png" alt="">
+         <img src="img-10/services4-2.png" alt="">
+      </section>
+   </div>
+</body>
+
+</html>
